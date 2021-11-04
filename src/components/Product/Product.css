@@ -1,0 +1,86 @@
+.containerP {
+  border: 2px solid #e0e0e0;
+  margin: 10px;
+  border-radius: 5px;
+  width: 60vw;
+  flex-shrink: 0;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgCont {
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.foodImg {
+  border-radius: 0;
+  width: 177px;
+  height: 177px;
+  background-color: initial;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.food h3 {
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.food h4 {
+  font-size: 12px;
+  color: #828282;
+  margin-top: 12px;
+}
+
+.food span {
+  color: #27ae60;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.btProduct {
+  width: 106px;
+  height: 40px;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 769px) {
+  .containerP {
+    width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .containerP {
+    width: 18vw;
+    height: 390px;
+  }
+
+  .food h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .food h4 {
+    font-size: 12px;
+    color: #828282;
+    margin-top: 12px;
+  }
+
+  .btProduct {
+    cursor: pointer;
+  }
+}

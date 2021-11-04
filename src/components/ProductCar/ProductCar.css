@@ -1,0 +1,38 @@
+.containerPC {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  margin-top: 8px;
+}
+
+img {
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+section {
+  margin: auto 10px;
+}
+
+section h3 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #828282;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1600px) {
+  .containerPC {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .containerPC img {
+    margin-left: 10px;
+  }
+}

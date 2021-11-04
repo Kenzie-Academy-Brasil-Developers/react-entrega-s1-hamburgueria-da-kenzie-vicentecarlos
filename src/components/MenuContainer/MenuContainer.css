@@ -1,0 +1,21 @@
+.containerMC {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+@media only screen and (min-width: 769px) {
+  .containerMC {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .containerMC {
+    width: 1100px;
+    margin-left: 10px;
+    overflow: unset;
+  }
+}
