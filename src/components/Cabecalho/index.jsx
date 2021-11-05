@@ -18,7 +18,10 @@ const Cabecalho = ({ showProducts }) => {
               setSearch(event.target.value);
             }}
           ></input>
-          <button className="pesquisa" onClick={() => showProducts(search)}>
+          <button
+            className="pesquisa"
+            onClick={() => showProducts(search.toLowerCase())}
+          >
             Pesquisar
           </button>
         </section>

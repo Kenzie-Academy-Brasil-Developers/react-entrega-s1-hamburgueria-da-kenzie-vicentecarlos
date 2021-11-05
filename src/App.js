@@ -58,7 +58,10 @@ function App() {
   const [verify, setVerify] = useState(false);
 
   const showProducts = (show) => {
-    const filteR = products.filter((item) => item.category === show);
+    const filteR = products.filter(
+      (item) =>
+        item.name.toLowerCase() === show || item.category.toLowerCase() === show
+    );
     setFilteredProducts(filteR);
   };
 
