@@ -84,6 +84,7 @@ function App() {
           handleClick={handleClick}
           filteredProducts={filteredProducts}
           setVerify={setVerify}
+          currentSale={currentSale}
         />
         <Carrinho
           currentSale={currentSale}

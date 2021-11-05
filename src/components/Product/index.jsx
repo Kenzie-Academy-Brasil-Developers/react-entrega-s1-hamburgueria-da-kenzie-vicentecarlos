@@ -1,6 +1,6 @@
 import "./Product.css";
 
-const Product = ({ item, handleClick, setVerify }) => {
+const Product = ({ item, handleClick, setVerify, currentSale }) => {
   return (
     <div className="containerP">
       <section className="imgCont">
@@ -13,8 +13,11 @@ const Product = ({ item, handleClick, setVerify }) => {
         <button
           className="btProduct"
           onClick={() => {
+            currentSale.length === 0 ? handleClick(item.id) : setVerify(false);
+            currentSale.map((current) =>
+              current === item ? setVerify(true) : handleClick(item.id)
+            );
             setVerify(true);
-            handleClick(item.id);
           }}
         >
           Adicionar

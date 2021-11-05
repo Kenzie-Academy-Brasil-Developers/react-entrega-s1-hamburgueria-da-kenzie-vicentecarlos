@@ -6,6 +6,7 @@ const MenuContainer = ({
   handleClick,
   filteredProducts,
   setVerify,
+  currentSale,
 }) => {
   return (
     <div className="containerMC">
@@ -15,6 +16,7 @@ const MenuContainer = ({
               item={item}
               handleClick={handleClick}
               setVerify={setVerify}
+              currentSale={currentSale}
             />
           ))
         : filteredProducts.map((item) => (
@@ -22,6 +24,7 @@ const MenuContainer = ({
               item={item}
               handleClick={handleClick}
               setVerify={setVerify}
+              currentSale={currentSale}
             />
           ))}
     </div>
