@@ -21,7 +21,6 @@ const Carrinho = ({
               className="bt"
               name="remove"
               onClick={() => {
-                console.log(currentSale);
                 currentSale.length === 1
                   ? setVerify(false)
                   : removerItem(item.name);

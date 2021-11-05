@@ -13,10 +13,11 @@ const Product = ({ item, handleClick, setVerify, currentSale }) => {
         <button
           className="btProduct"
           onClick={() => {
-            currentSale.length === 0 ? handleClick(item.id) : setVerify(false);
-            currentSale.map((current) =>
-              current === item ? setVerify(true) : handleClick(item.id)
-            );
+            currentSale.length === 0
+              ? handleClick(item.id)
+              : currentSale.includes(item) === true
+              ? setVerify(true)
+              : handleClick(item.id);
             setVerify(true);
           }}
         >
